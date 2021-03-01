@@ -1,0 +1,21 @@
+{
+    "name": "phpsoliloquy/frameworkless",
+    "description": "Description",
+    "keywords": ["PHP", "Frameworkless", "Patrick Louy"],
+    "license": "None",
+    "authors": [
+        {
+            "name": "joey_joe_joe",
+            "email": "joeyj@hotmail.com",
+            "role": "Creator / Main Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "myframeworkless\\": "src/"
+        }
+    }
+}
