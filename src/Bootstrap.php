@@ -1,12 +1,12 @@
 <?php declare(strict_types = 1);
 echo "Text to test screen output.";
 
-namespace myframeworkless;
-
 require __DIR__ . '/../vendor/autoload.php';
 
-error_reporting(E_ALL);
+#namespace Myframeworkless;
 
+error_reporting(E_ALL);
+# Some comment that needs deleting.
 // When pushed to the production server chance the line below to "production".
 $environment = 'development';
 

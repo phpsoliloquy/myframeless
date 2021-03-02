@@ -1,5 +1,5 @@
 {
-    "name": "phpsoliloquy/frameworkless",
+    "name": "phpsoliloquy/myframeworkless",
     "description": "Description",
     "keywords": ["PHP", "Frameworkless", "Patrick Louy"],
     "license": "None",
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "myframeworkless\\": "src/"
+            "Myframeworkless\\": "/var/www/myframeworkless/src/"
         }
     }
 }
