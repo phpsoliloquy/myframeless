@@ -6,7 +6,7 @@ require __DIR__ . '/../vendor/autoload.php';
 #namespace Myframeworkless;
 
 error_reporting(E_ALL);
-# Some comment that needs deleting.
+
 // When pushed to the production server chance the line below to "production".
 $environment = 'development';
 
