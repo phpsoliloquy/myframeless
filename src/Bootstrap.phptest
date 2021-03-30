@@ -1,0 +1,14 @@
+<?php declare(strict_types = 1);
+
+$a = 3;
+$b = $a;
+echo $b . "<br>";
+
+$a = 4;
+echo $b . "<br>";
+
+//unset($a);
+$b = 5;
+echo $b . "<br>";
+//echo "Intermediate statement";
+echo $a . "<br>";

@@ -1,13 +1,12 @@
 <?php declare(strict_types = 1);
-echo "Text to test screen output.";
+
+namespace Myframeworkless;
 
 require __DIR__ . '/../vendor/autoload.php';
 
-#namespace Myframeworkless;
-
 error_reporting(E_ALL);
 
-// When pushed to the production server chance the line below to "production".
+// When pushed to the production server change the line below to "production".
 $environment = 'development';
 
 /**
@@ -23,4 +22,14 @@ if ($environment !== 'production') {
 }
 $whoops->register();
 
-throw new \Exception;
+$request = new \Http\HttpRequest($_GET, $_POST, $_COOKIE, $_FILES, $_SERVER);
+$response = new \Http\HttpResponse;
+
+$content = '<p>This is a set response using the HTML handler package from Patrick Louy.</p>';
+$response->setContent($content);
+
+foreach ($response->getHeaders() as $header) {
+    header($header, false);
+}
+
+echo $response->getContent();
