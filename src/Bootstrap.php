@@ -25,7 +25,7 @@ $whoops->register();
 $request = new \Http\HttpRequest($_GET, $_POST, $_COOKIE, $_FILES, $_SERVER);
 $response = new \Http\HttpResponse;
 
-$content = '<p>This is a set response using the HTML handler package from Patrick Louy.</p>';
+$content = '<p>This is a set response using the HTML handler package from Mr. Patrick Louey.</p>';
 $response->setContent($content);
 
 foreach ($response->getHeaders() as $header) {
