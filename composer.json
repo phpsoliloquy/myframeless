@@ -12,8 +12,8 @@
     ],
     "require": {
         "php": ">=7.0.0",
-        "filp/whoops": "^2.9",
-        "patricklouys/http": "^1.4"
+        "patricklouys/http": "^1.4",
+        "filp/whoops": "^2.12"
     },
     "autoload": {
         "psr-4": {
